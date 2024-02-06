@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0898E"
+    tools:context=".HayvanActivity" >
+
+    <TextView
+        android:id="@+id/hayvanPuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="320dp"
+        android:text="Puanınız: "
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtHayvanSoru"
+        android:layout_width="255dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="160dp"
+        android:textAlignment="center"
+        android:textColor="#F9C970"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtViewHayvan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtHayvanSoru"
+        app:layout_constraintStart_toStartOf="@+id/txtHayvanSoru"
+        app:layout_constraintTop_toBottomOf="@+id/txtHayvanSoru" />
+
+    <EditText
+        android:id="@+id/txtHayvanTahmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Tahmin"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/txtViewHayvan"
+        app:layout_constraintStart_toStartOf="@+id/txtViewHayvan"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewHayvan" />
+
+    <ImageButton
+        android:id="@+id/btnHayvanHarf"
+        android:layout_width="136dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="60dp"
+        android:background="#F9C970"
+        android:contentDescription="Harf al"
+        android:onClick="harfHayvan"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toStartOf="@+id/btnHayvanTahmin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnHayvanTahmin"
+        app:srcCompat="@drawable/harf" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:text="Harf Al"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnHayvanHarf"
+        app:layout_constraintEnd_toEndOf="@+id/btnHayvanHarf"
+        app:layout_constraintStart_toStartOf="@+id/btnHayvanHarf"
+        app:layout_constraintTop_toTopOf="@+id/btnHayvanHarf" />
+
+    <ImageButton
+        android:id="@+id/btnHayvanTahmin"
+        android:layout_width="136dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="45dp"
+        android:background="#33C33E"
+        android:contentDescription="Tahminde bulun"
+        android:onClick="tahminHayvan"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHayvanTahmin"
+        app:srcCompat="@drawable/tahmin" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:text="Tahmin Et"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnHayvanTahmin"
+        app:layout_constraintEnd_toEndOf="@+id/btnHayvanTahmin"
+        app:layout_constraintStart_toStartOf="@+id/btnHayvanTahmin"
+        app:layout_constraintTop_toTopOf="@+id/btnHayvanTahmin" />
+</androidx.constraintlayout.widget.ConstraintLayout>
